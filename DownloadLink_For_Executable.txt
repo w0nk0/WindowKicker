@@ -1,0 +1,7 @@
+This is the link to download the executable compiled with AutoHotKey (AHK) from the script.
+I encourage you to install AHK and compile it yourself to be safe. 
+
+I take no responsibility for the results of using this software. All your damages are your own, as are the benefits! ;)
+
+https://drive.google.com/file/d/0B-Oz-iGEvFmCRkRDX1FJRl9laWs/edit?usp=sharing
+
