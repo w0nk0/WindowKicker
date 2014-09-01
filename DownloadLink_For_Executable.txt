@@ -13,5 +13,7 @@ Use RightControl-1 and -2 to move all windows to the respective screen..
 
 -----
 
-https://drive.google.com/file/d/0B-Oz-iGEvFmCRkRDX1FJRl9laWs/edit?usp=sharing
+https://dl.dropboxusercontent.com/u/1763962/WindowKicker.exe
 
+
+V0.2- changed download link to dropbox because FU Google Drive
