@@ -3,5 +3,15 @@ I encourage you to install AHK and compile it yourself to be safe.
 
 I take no responsibility for the results of using this software. All your damages are your own, as are the benefits! ;)
 
+----
+
+Usage: 
+=====
+
+Run it. You'll see a green "H" icon in your tray, that means it's active. 
+Use RightControl-1 and -2 to move all windows to the respective screen..
+
+-----
+
 https://drive.google.com/file/d/0B-Oz-iGEvFmCRkRDX1FJRl9laWs/edit?usp=sharing
 
