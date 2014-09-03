@@ -4,7 +4,15 @@
 
 #SingleInstance force
 
+>^3::
+SysGet, Mon, Monitor, 1
+x := (MonRight - MonLeft) / 5
+y := (MonBottom-MonTop) / 3
+WinMove,A,,x,y
+return
+
 >^1::
+WinGet,activeWin,ID,A
 SysGet, Mon, Monitor, 1
 SysGet, count, MonitorCount
 if %count%>0 
@@ -16,11 +24,11 @@ if %count%>0
 ; return
 
 WinGet windows, List
-idx:=0
+idx:=80
 Loop %windows%
 {
 	id := windows%A_Index%
-	idx := idx + 20
+	idx := idx + 40
 	;x := 20 + %A_Index% * 10
 	;y := 20 + %A_Index% * 10
 	;x:= basex + idx
@@ -37,6 +45,7 @@ Loop %windows%
 	 ;r .= windows%A_Index% . " - Title: ". title . "`n"
 	}
 }
+WinActivate, ahk_id %activeWin%
 return
 
 
@@ -58,21 +67,21 @@ if  count >0
 }
 
 WinGet windows, List
-idx:=0
+idx:=20
 Loop %windows%
 {
 	id := windows%A_Index%
-	idx := idx+20
-	;x := 20 + %A_Index% * 10
-	;y := 20 + %A_Index% * 10
-	x:=  basex + idx
+	idx := idx+40
+
 	;x:= %A_ScreenWidth% + %idx%
+	x:=  basex + idx
 	y:=  idx
+
 	WinGetTitle, title, ahk_id %id%
 	IfWinExist, %title%
 	{
 	 ;WinMove, %title%, , 20,20
-	 WinMove, A_ScreenWidth, idx 
+	 WinMove, A_ScreenWidth+idx, idx 
 	 WinActivate
 	 ;r .= windows%A_Index% . " - Title: ". title . "`n"
 	 ;MsgBox ,"%title%: %x%, %y% - %A_ScreenWidth%" 
